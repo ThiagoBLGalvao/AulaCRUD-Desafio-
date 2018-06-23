@@ -15,13 +15,13 @@
                 <div class="form-group">
                     <label class="control-label" for="nome">Nome: </label>
                     <input value="${aluno.nome}" class="form-control" name="nome" 
-                           id="nome" type="text" required />
+                           id="nome" type="text" required pattern="[a-z\s]+$"/>
                     <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="idade">Idade: </label>
                     <input value="${aluno.idade}" class="form-control" name="idade" 
-                           id="idade" type="text" required />
+                           id="idade" type="text" required pattern="[0-9]+$" />
                     <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
